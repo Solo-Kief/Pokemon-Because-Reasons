@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AAD0A472CF44264CC643378 /* Pods_Pokemon_Because_Reasons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DD9908D87C30CFB1EC2173 /* Pods_Pokemon_Because_Reasons.framework */; };
 		C6FEB22F2180B3B900021499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEB22E2180B3B900021499 /* AppDelegate.swift */; };
 		C6FEB2312180B3B900021499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FEB2302180B3B900021499 /* ViewController.swift */; };
 		C6FEB2342180B3B900021499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FEB2322180B3B900021499 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32DD9908D87C30CFB1EC2173 /* Pods_Pokemon_Because_Reasons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon_Because_Reasons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50626A44B640F54D88111B42 /* Pods-Pokemon Because Reasons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon Because Reasons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon Because Reasons/Pods-Pokemon Because Reasons.debug.xcconfig"; sourceTree = "<group>"; };
+		ACC3CB45DFF3F2E9DF8CA98F /* Pods-Pokemon Because Reasons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon Because Reasons.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon Because Reasons/Pods-Pokemon Because Reasons.release.xcconfig"; sourceTree = "<group>"; };
 		C6FEB22B2180B3B900021499 /* Pokemon Because Reasons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Because Reasons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FEB22E2180B3B900021499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FEB2302180B3B900021499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAD0A472CF44264CC643378 /* Pods_Pokemon_Because_Reasons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81EF959B2DC82B2F5D35D8E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50626A44B640F54D88111B42 /* Pods-Pokemon Because Reasons.debug.xcconfig */,
+				ACC3CB45DFF3F2E9DF8CA98F /* Pods-Pokemon Because Reasons.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C6FEB2222180B3B900021499 = {
 			isa = PBXGroup;
 			children = (
 				C6FEB22D2180B3B900021499 /* Pokemon Because Reasons */,
 				C6FEB22C2180B3B900021499 /* Products */,
+				81EF959B2DC82B2F5D35D8E4 /* Pods */,
+				EEE51EAD39869C7772A4F5B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "Pokemon Because Reasons";
 			sourceTree = "<group>";
 		};
+		EEE51EAD39869C7772A4F5B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32DD9908D87C30CFB1EC2173 /* Pods_Pokemon_Because_Reasons.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6FEB23D2180B3B900021499 /* Build configuration list for PBXNativeTarget "Pokemon Because Reasons" */;
 			buildPhases = (
+				B955AF127FD8D1E334C05E0A /* [CP] Check Pods Manifest.lock */,
 				C6FEB2272180B3B900021499 /* Sources */,
 				C6FEB2282180B3B900021499 /* Frameworks */,
 				C6FEB2292180B3B900021499 /* Resources */,
+				A71AE7B3DCE8BF2352B4B242 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A71AE7B3DCE8BF2352B4B242 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pokemon Because Reasons/Pods-Pokemon Because Reasons-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokemon Because Reasons/Pods-Pokemon Because Reasons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B955AF127FD8D1E334C05E0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokemon Because Reasons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6FEB2272180B3B900021499 /* Sources */ = {
@@ -280,10 +347,13 @@
 		};
 		C6FEB23E2180B3B900021499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50626A44B640F54D88111B42 /* Pods-Pokemon Because Reasons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA7ASKQ2T8;
 				INFOPLIST_FILE = "Pokemon Because Reasons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +361,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Phoenix.Pokemon-Because-Reasons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C6FEB23F2180B3B900021499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC3CB45DFF3F2E9DF8CA98F /* Pods-Pokemon Because Reasons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MA7ASKQ2T8;
 				INFOPLIST_FILE = "Pokemon Because Reasons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Phoenix.Pokemon-Because-Reasons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
