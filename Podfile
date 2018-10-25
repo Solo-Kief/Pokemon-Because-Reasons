@@ -8,5 +8,6 @@ target 'Pokemon Because Reasons' do
   # Pods for Pokemon Because Reasons
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 4.7'
+  pod 'SDWebImage'
 
 end
